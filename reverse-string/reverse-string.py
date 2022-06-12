@@ -7,6 +7,8 @@ class Solution:
         j = len(s) - 1
 
         while i < j:
-            s[j],s[i]= s[i], s[j]
+            temp = s[j]
+            s[j] = s[i]
+            s[i] = temp
             i = i + 1
             j = j - 1
